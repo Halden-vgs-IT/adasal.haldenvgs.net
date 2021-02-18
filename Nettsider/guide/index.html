@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- General -->
+  <title>Playground</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- Style -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<!-- # Code Area -->
+<div class="code-area">
+  <!-- Top -->
+	<div class="top">
+		<h1>Info og hjelp</h1>
+		<p>her kan du leke med javascript.</p>
+    <p>Bruk feltet under for å skrive koden.</p>
+    <p>Her har du noen ideér til hva du kan gjøre:</p>
+    <ol>
+      <li>Flytt på boksene</li>
+      <li>Endre utseende til boksene (f.eks. størrelse, farge osv.)</li>
+      <li>Finn kule effekter på nett, og prøv å lag disse med de 3 boksene du har.</li>
+    </ol>
+    <p>Her har du eksempler på javascript kode:</p>
+    <ul id="none">
+      <li>rødBox = document.getElementById("box1");</li>
+	  
+      <li>rødBox.style.left = "30%";</li>
+      <li>rødBox.style.backgroundColor = "green";</li>
+	  
+	  <li>rødBox.style.transform = "rotate(90deg)";</li>
+	  
+    </ul>
+    <p class="topspace">Nyttige lenker:</p>
+    <p>
+      <a href="https://www.w3schools.com/js/js_variables.asp" target="_blank">https://www.w3schools.com/js/js_variables.asp</a>
+      <a href="https://www.w3schools.com/js/js_functions.asp" target="_blank">https://www.w3schools.com/js/js_functions.asp</a>
+      <a href="https://www.w3schools.com/js/js_events.asp" target="_blank">https://www.w3schools.com/js/js_events.asp</a>
+	  <a href="https://www.w3schools.com/js/js_timing.asp" target="_blank">https://www.w3schools.com/js/js_timing.asp</a>
+	</p>
+	<ul id="none">
+      <li>Husk ; etter hver linje, det er ikke viktig i javascript men det er viktig i andre språk</li>
+	  
+    </ul>
+	
+	</div>
+  <!-- Bottom -->
+	<div class="bottom">
+	<textarea id="javascriptInput" placeholder="Begynn på koden..."></textarea>
+    <div class="button-wrapper">
+      <button type="button" class="button btn-primary" onclick="runCS()">Kjør kode<div class="btn-secondary"></div></button>
+    </div>
+	</div>
+	</br>
+	<p>Bonus</p>
+		<ul id="none">
+		  <li>Gå til <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank"> Cookie Clicker </a></li>
+		  
+		  <li>press F12</li>
+		  <li>Gå til Console </li>
+		  <li> og skriv Game.Earn(10) </li>
+		  <li> Du kan gi så mange cookies du vil </li>
+		  
+		</ul>
+		
+</div>
+<!-- # Playground -->
+<div class="playground">
+	<div class="playground-inner">
+
+		<div id="box1" class="box"></div>
+
+		<div id="box2" class="box"></div>
+
+		<div id="box3" class="box"></div>
+
+		<div id="results"></div>
+
+	</div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
