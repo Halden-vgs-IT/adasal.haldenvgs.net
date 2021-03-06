@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- General -->
+    <title>Playground</title>
+    <link rel="stylesheet" href="css.css">
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <meta charset="utf-8">
+</head>
+<body>
+
+	<div id="orderBox">
+
+		<h4> Alle mellom 0 og 12 år blir annset som barn, er du over dette må du velge voksen </h4>
+		<div class="buttonBox">
+			<input type="range" min="1" max="7" value="2" class="slider" id="dayRange">
+			<button id="childButton"> Barn </button>
+		</div>
+		
+		<div id="prisInfoBox">
+			
+			<p><span id="mineDager"> 1 </span> dag<span id="moDays">er</span></p>
+			<br /><br />
+			<p id="avslagBox"></p> 
+			<p><span id="pris">200</span> Kroner</p >
+		</div>
+	</div>
+
+	<button><a href="hyttebestilling.html">Bestil</a></button>
+
+	<img src="images/BGSheis.jpg" class="BGS" style="top:0%">
+	<i onclick="showBGSheis()" id="BGSbutton" class="uil uil-book-open"></i>
+
+</body>
+    <script type="text/javascript" src="javascript.js"></script>
+</html>

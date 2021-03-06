@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- General -->
+    <title>Førvisning</title>
+    <link rel="stylesheet" href="css.css">
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <meta charset="utf-8">
+</head>
+<body>
+
+	<i onclick="back()" id="backArrow" class="uil uil-angle-left-b"></i>
+	<i onclick="showBGS()" id="BGSbutton" class="uil uil-book-open"></i>
+	<img class="BGS" src="images/BGS.jpg">
+	
+	<div id="hytteWrap">
+		<img id="hytteSelect" src="images/menybilde.jpg">
+	
+	
+		<div class="hytteBoxer" id="grantoppen"> </div>
+		<div class="hytteBoxer" id="granbo"> </div>
+		<div class="hytteBoxer" id="granstua"> </div>
+		<div class="hytteBoxer" id="granhaug"> </div>
+	</div>
+
+		<select onclick="seasonChange(this)" id="seasons">
+			<option value="jul">Jul</option>
+			<option value="vinter">Vinterferie</option>
+			<option value="påske">Påske</option>
+	    </select>
+
+
+
+	<div id="bildeBackground" onclick="removeBildeWindow()">
+		<video id="vid" autoplay controls>
+		<source src="images/hyttefelt.mp4" type="video/mp4">
+		Your browser does not support HTML video.
+	</video>
+	</div>
+	<div id="bildeWindow">
+		<div class="hytteImageContainers" id="granboImageContainer">	
+			<img id="bigImg" class="bigImg" class="image" src="images/granbo01.jpg" />
+				<img class="smallImg" class="smallImg1" onclick="turnBig(this)" class="smallImg" class="image" src="images/granbo02.jpg" />
+				<img class="smallImg" class="smallImg2" onclick="turnBig(this)" class="smallImg" class="image" src="images/granbo03.jpg" />
+		</div>	
+		
+		<div class="hytteImageContainers" id="granstuaImageContainer">
+			<img id="bigImg2" class="bigImg" class="image" src="images/granstua01.jpg" />
+				<img class="smallImg" class="smallImg1" onclick="turnBig(this,2)" class="smallImg" class="image" src="images/granstua02.jpg" />
+				<img class="smallImg" class="smallImg2" onclick="turnBig(this,2)" class="smallImg" class="image" src="images/granstua03.jpg" />
+		</div>
+		
+		<h1 id="noHytteText" style="color:white"> Det er ingen bilder til denne hytten, prøv en annen </h1>
+		
+		<div id="hytteInfoBox">
+			<h1 class="hytteInfoText" id="hytteNavn"></h1>
+			<p class="hytteInfoText"> Standard: <span id="standardInfoText"> </span></p>
+			<p class="hytteInfoText"> Sengeplasser: <span id="sengeInfoText"> </span></p>
+			<p class="hytteInfoText"> Badstue: <span id="badInfoText"> </span></p>
+			<p class="hytteInfoText"> Ukespris: <span id="ukesPrisText"> </span></p>
+		<button onclick="bestillClick()" id="bestillButton">Bestil</button>
+		</div>
+		
+
+	</div>
+
+
+	<div id="seasonBox">
+		
+	
+	
+	</div>
+	
+
+</body>
+    <script type="text/javascript" src="javascript.js"></script>
+</html>

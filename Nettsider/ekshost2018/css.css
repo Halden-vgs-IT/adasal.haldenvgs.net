@@ -1,0 +1,337 @@
+body {
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items:center;
+	text-align:center;
+	background-color:black;
+}
+
+a{
+	text-decoration: none;
+}
+ul{
+	list-style-type: none;
+}
+
+#bestillButton{
+	left:5%;
+}
+
+
+#seasons{
+	position:absolute;
+	left:1%;
+	top:10%;
+	border-radius:10px;
+	
+}
+
+
+
+#vid{
+	position: absolute;
+	width: 20%;
+	left: 72%;
+	top:5%;
+}
+
+
+
+.hytteInfoText{
+	color:white;
+}
+
+#hytteNavn{
+	color:white;
+	position:relative;
+	display:inline;
+	
+}
+
+.hytteImageContainers{
+	display: none;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 50%);
+	grid-template-areas:
+		"img1 imgsmall1"
+		"img1 imgsmall2"
+	;
+	width:30em;
+	height:100%;
+	background-color:cyan;
+	left:0;
+}
+
+
+.bigImg{
+	width: 100%;
+	grid-area: img1;
+}
+.smallImg1 {
+	grid-area: imgsmall1;
+}
+.smallImg1 {
+	grid-area: imgsmall2;
+}
+
+
+.smallImg{
+	width: 40%;
+}
+
+
+
+#bildeBackground{
+	width: 100%;
+	height:100%;
+	position:absolute;
+	opacity:0.7;
+	background-color:white;
+	display:none;
+	z-index: 3
+}
+
+#bildeWindow{
+	position:absolute;
+	width:1000px;
+	height:250px;
+	background-color:black;
+	opacity: 1; 
+	display:none;
+	align-items: center;
+	padding:16px;
+	z-index:4;
+}
+
+
+
+
+#hytteWrap{
+	width:100%;
+	height: 100%;
+	position:relative;
+}
+
+.hytteBoxer{
+	position:absolute;
+	width: 250px;
+	height: 150px;
+	background-color: white;
+	opacity: 0;
+	border-radius:100%;
+}
+
+.hytteBoxer:hover{
+	opacity:0.3;
+	
+}
+
+#grantoppen{
+	left: 18%;
+	top:35%;
+	width:285px;
+	height:170px;
+}
+
+
+#granbo{
+	height:120px;
+	width:150px;
+	left:40%;
+	top:21%;
+}
+
+#granstua{
+	left: 51%;
+	top: 31%;
+	width: 169px;
+	height:136px;
+}
+
+#granhaug{
+	left:63%;
+	top:30%;
+	height: 100px;
+	width:130px;
+}
+
+
+
+
+#moDays{
+	display:none;
+}
+
+.buttonBox {
+    display:flex;
+    justify-content: center;
+}
+
+#childButton{
+	margin-left:30%;
+	
+}
+
+
+
+#prisInfoBox{
+	background-color: #f1f1f1;
+	border-radius: 15px;
+	box-shadow: 2px 2px white;
+	width: 20%;
+}
+
+p{
+	color: black;
+}
+
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+
+  background-color: gray;  
+
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: cyan;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: cyan;
+  cursor: pointer;
+}
+
+
+button {
+background-color:white;
+border-radius: 15px;
+color: black;
+padding:16px;
+
+}
+
+header{
+	width:100%;
+	height: 50%;
+	text-align:center;
+}
+
+#orderBox{
+	display: flex;
+	flex-direction: column;
+	height:10%;
+	width:80%;
+	margin: 1% 1% 1% 1%;
+}
+
+
+#dayRange{
+	width:40%;
+	
+}
+
+
+#hytteInfoBox{
+	position:relative;
+	width:40%;
+	height:100%;
+	left:3%;
+	display:none;
+	color:white;
+}
+
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexbox-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.flexbox-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.flexbox-col {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.flexbox-col-left {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.flexbox-col-right {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.flexbox-left-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.flexbox-right-start {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.flexbox-space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flexbox-col-left-start {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+#backArrow{
+	position:absolute;
+	left: 3%;
+	top: 3%;
+	color:white;
+	background-color:black;
+	z-index: 2;
+}
+
+#BGSbutton{
+	position:absolute;
+	left: 98%;
+	top:3%;
+	color:white;
+	background-color:black;
+	z-index:2;
+}
+
+.BGS{
+	position:absolute;
+	width:80%;
+	display:none;
+	z-index:2;
+}
